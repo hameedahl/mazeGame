@@ -1,16 +1,33 @@
 <!DOCTYPE html>
-<meta charset="utf-8">
+<html lang="en">
 <head>
-  <title>Webgazer.js + D3.js collision demo</title>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
-<script src="https://code.jquery.com/ui/1.11.4/jquery-ui.min.js"></script>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+        <script src="https://code.jquery.com/ui/1.11.4/jquery-ui.min.js"></script>
+        <script src="script.js"></script>
+        <script src="https://d3js.org/d3.v3.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/localforage/1.8.1/localforage.js"></script>
+        <script src="webgazer.js"></script>
+        <script src="collision.js"></script>
+        <link rel="stylesheet" href="style.css">
+        <style>
+                html {
+                        background-image: url(imgs/garden.gif);
+                        width: 100%;
+                        height: 100%;
+                        background-repeat: no-repeat;
+                        background-position: top top;
+                        background-size: cover;
+                }
+        </style>
 </head>
 <body>
-  <script src="script.js"></script>
-  <link rel="stylesheet" href="style.css">
+        <div id="canvas">
+            <div id="title"></div>
+              <img id="maze" src="imgs/mazes/maze.png"></img>
+            <div id="ball"></div>
+        </div>
 </body>
-<div id="canvas">
-  <div id="title"></div>
-  <img id="maze" src="imgs/mazes/maze.png"></img>
-  <div id="ball"></div>
-</div>
+</html>

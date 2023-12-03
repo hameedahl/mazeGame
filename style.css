@@ -1,3 +1,51 @@
+* {
+        margin: 0;
+        padding: 0;
+}
+
+
+/* home page */
+.title {
+        color: #F29188;
+        position: absolute;
+        left: 50%;
+        top: 45%;
+        width: 100%;
+        transform: translate(-50%, -50%);
+        text-align: center;
+}
+
+.title h1 {
+        font-size: 130px;
+        text-shadow: 6px 4px 4px #3E593F, 0 0 1em #F29188, 0 0 0.2em #fff;
+        transition: 1s;
+        font-weight: bolder;
+}
+
+a {
+        text-decoration: none;
+}
+
+.start-btn {
+        font-size: 35px;
+        font-style: italic;
+        font-family: 'Times New Roman', Times, serif;
+        font-weight: bold;
+        background: none;
+        color: #aacca7;
+        border: none;
+        text-shadow: 2px 2px 4px #3E593F, 
+                     0 0 0.2em #000, 
+                     0 0 1em #3E593F;
+        cursor: pointer;
+        position: relative;
+        top: 3vh;
+        transition: 1s;
+}
+
+.start-btn:hover {
+        color: #fff;
+}
 
 #mazeImg {
         width: 50%;
